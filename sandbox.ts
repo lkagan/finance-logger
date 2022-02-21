@@ -1,0 +1,18 @@
+let character = 'mario'; // TS infers the type from the assignment..
+let age = 30;
+let isBlackBelt = false;
+
+// character = 20;
+character = 'luigi';
+
+// age = 'yoshi';
+age = 40;
+
+// isBlackBelt = 'yes';
+isBlackBelt = true;
+
+const circ = (diameter: number) => {
+    return diameter * Math.PI;
+}
+
+console.log(circ(7.5));
