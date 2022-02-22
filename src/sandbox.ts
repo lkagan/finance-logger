@@ -1,21 +1,13 @@
 
-let greet: Function;
+type StringOrNum = string | number;
+type ObjWithName = { name: string, uid: StringOrNum }
 
-greet = () => {
-    console.log('hello, world');
+let myVar: StringOrNum;
+
+const logDetails = (uid: StringOrNum, item: string) => {
+    console.log(`Item has a uid of ${uid}`);
 }
 
-// greet = 'hello';
-
-const add = (a: number, b: number, c: number|string = 10): void => {
-    console.log(a + b);
-    console.log(c);
+const greet = (user: ObjWithName) => {
+    console.log(`${user.name} says hello`);
 }
-
-add(5, 10, '20');
-
-const minus = (a: number, b: number): number => {
-    return a + b;
-}
-
-let results = minus(10, 7);
